@@ -1,0 +1,13 @@
+<h2><%= stage %> post</h2>
+
+<form method="post" action="<%= url %>">
+  Title:
+  <input type="text" value="<%= title %>" name="title" />
+
+  <hr>
+
+  Content:
+  <textarea name="content"><%= content %></textarea>
+
+  <input type="submit"/>
+</form>

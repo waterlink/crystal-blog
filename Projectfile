@@ -1,0 +1,5 @@
+deps do
+  github "waterlink/active_record.cr"
+  github "waterlink/mocks.cr"
+  github "manastech/frank"
+end
