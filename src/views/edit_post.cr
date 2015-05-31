@@ -9,7 +9,6 @@ module Blog
     private getter content
 
     def initialize(@id = 0, @title = "", @content = "")
-      p "got #{id}, #{title}, #{content}"
     end
 
     def stage
@@ -23,7 +22,7 @@ module Blog
     end
 
     private def new?
-      id.is_a?(Int::Null) || id.is_a?(Nil)
+      id.is_a?(Int::Null)
     end
   end
 end

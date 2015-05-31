@@ -3,9 +3,6 @@ require "active_record/null_adapter"
 
 module Blog
   class Post < ActiveRecord::Model
-    include ActiveRecord::CriteriaHelper
-    extend ActiveRecord::CriteriaHelper
-
     adapter null
     table_name posts
 
@@ -17,7 +14,7 @@ module Blog
     query_level :private
 
     def self.latest
-      where(criteria("id") > 0)
+      index
     end
 
     def build_view(view_factory)

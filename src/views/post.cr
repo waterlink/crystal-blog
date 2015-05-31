@@ -11,10 +11,6 @@ module Blog
     def initialize(@id = 0, @title = "", @content = "")
     end
 
-    def self.[](post)
-      new(post)
-    end
-
     def url
       "/posts/#{id}"
     end

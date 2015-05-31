@@ -9,7 +9,7 @@ module Blog
     end
 
     def call
-      (Post.read(id) as Post).build_view(EditPostView)
+      Post.read(id).build_view(EditPostView)
     end
   end
 end
